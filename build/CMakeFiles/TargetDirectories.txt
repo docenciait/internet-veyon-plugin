@@ -1,0 +1,5 @@
+/home/madrid/mi-plugin-veyon/build/CMakeFiles/internetcontrol.dir
+/home/madrid/mi-plugin-veyon/build/CMakeFiles/edit_cache.dir
+/home/madrid/mi-plugin-veyon/build/CMakeFiles/rebuild_cache.dir
+/home/madrid/mi-plugin-veyon/build/CMakeFiles/internetcontrol_autogen_timestamp_deps.dir
+/home/madrid/mi-plugin-veyon/build/CMakeFiles/internetcontrol_autogen.dir
