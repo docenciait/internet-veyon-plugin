@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/madrid/mi-plugin-veyon
+CMAKE_SOURCE_DIR = /home/madrid/internet-veyon-plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/madrid/mi-plugin-veyon/build
+CMAKE_BINARY_DIR = /home/madrid/internet-veyon-plugin/build
 
 # Utility rule file for internetcontrol_autogen_timestamp_deps.
 
@@ -82,6 +82,6 @@ CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/depend:
-	cd /home/madrid/mi-plugin-veyon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrid/mi-plugin-veyon /home/madrid/mi-plugin-veyon /home/madrid/mi-plugin-veyon/build /home/madrid/mi-plugin-veyon/build /home/madrid/mi-plugin-veyon/build/CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/madrid/internet-veyon-plugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrid/internet-veyon-plugin /home/madrid/internet-veyon-plugin /home/madrid/internet-veyon-plugin/build /home/madrid/internet-veyon-plugin/build /home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/depend
 

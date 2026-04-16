@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/madrid/mi-plugin-veyon
+CMAKE_SOURCE_DIR = /home/madrid/internet-veyon-plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/madrid/mi-plugin-veyon/build
+CMAKE_BINARY_DIR = /home/madrid/internet-veyon-plugin/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -84,14 +84,14 @@ CMakeFiles/internetcontrol.dir/all: CMakeFiles/internetcontrol_autogen_timestamp
 CMakeFiles/internetcontrol.dir/all: CMakeFiles/internetcontrol_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/internetcontrol.dir/build.make CMakeFiles/internetcontrol.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/internetcontrol.dir/build.make CMakeFiles/internetcontrol.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/madrid/mi-plugin-veyon/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target internetcontrol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target internetcontrol"
 .PHONY : CMakeFiles/internetcontrol.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/internetcontrol.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/mi-plugin-veyon/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/internet-veyon-plugin/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/internetcontrol.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/mi-plugin-veyon/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/internet-veyon-plugin/build/CMakeFiles 0
 .PHONY : CMakeFiles/internetcontrol.dir/rule
 
 # Convenience name for target.
@@ -110,14 +110,14 @@ CMakeFiles/internetcontrol.dir/clean:
 CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/build.make CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/build.make CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/madrid/mi-plugin-veyon/build/CMakeFiles --progress-num= "Built target internetcontrol_autogen_timestamp_deps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num= "Built target internetcontrol_autogen_timestamp_deps"
 .PHONY : CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/mi-plugin-veyon/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/internet-veyon-plugin/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/mi-plugin-veyon/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/internet-veyon-plugin/build/CMakeFiles 0
 .PHONY : CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
@@ -136,14 +136,14 @@ CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/clean:
 CMakeFiles/internetcontrol_autogen.dir/all: CMakeFiles/internetcontrol_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/internetcontrol_autogen.dir/build.make CMakeFiles/internetcontrol_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/internetcontrol_autogen.dir/build.make CMakeFiles/internetcontrol_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/madrid/mi-plugin-veyon/build/CMakeFiles --progress-num=7 "Built target internetcontrol_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=7 "Built target internetcontrol_autogen"
 .PHONY : CMakeFiles/internetcontrol_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/internetcontrol_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/mi-plugin-veyon/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/internet-veyon-plugin/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/internetcontrol_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/mi-plugin-veyon/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/madrid/internet-veyon-plugin/build/CMakeFiles 0
 .PHONY : CMakeFiles/internetcontrol_autogen.dir/rule
 
 # Convenience name for target.

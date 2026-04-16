@@ -1,5 +1,5 @@
-/home/madrid/mi-plugin-veyon/build/internetcontrol_autogen/UVLADIE3JM/moc_InternetControlPlugin.cpp: /home/madrid/mi-plugin-veyon/src/InternetControlPlugin.h \
-  /home/madrid/mi-plugin-veyon/build/internetcontrol_autogen/moc_predefs.h \
+/home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/moc_InternetControlPlugin.cpp: /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.h \
+  /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/moc_predefs.h \
   /home/madrid/veyon-src/core/src/Computer.h \
   /home/madrid/veyon-src/core/src/ComputerControlInterface.h \
   /home/madrid/veyon-src/core/src/Configuration/Object.h \
@@ -281,6 +281,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QMutex \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointer \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QQueue \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QReadWriteLock \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QRecursiveMutex \
@@ -341,6 +342,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qpointer.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qqueue.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h \

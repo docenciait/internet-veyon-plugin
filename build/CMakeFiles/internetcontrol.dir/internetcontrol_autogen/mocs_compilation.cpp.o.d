@@ -1,7 +1,7 @@
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
- /home/madrid/mi-plugin-veyon/build/internetcontrol_autogen/mocs_compilation.cpp \
+ /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/madrid/mi-plugin-veyon/build/internetcontrol_autogen/UVLADIE3JM/moc_InternetControlPlugin.cpp \
+ /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/moc_InternetControlPlugin.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/madrid/mi-plugin-veyon/build/internetcontrol_autogen/UVLADIE3JM/../../../src/InternetControlPlugin.h \
+ /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/../../../src/InternetControlPlugin.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -288,6 +288,8 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVersionNumber \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversionnumber.h \
  /home/madrid/veyon-src/core/src/Feature.h \

@@ -1,7 +1,7 @@
 CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
- /home/madrid/mi-plugin-veyon/src/InternetControlPlugin.cpp \
+ /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.cpp \
  /usr/include/stdc-predef.h \
- /home/madrid/mi-plugin-veyon/src/InternetControlPlugin.h \
+ /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -287,6 +287,8 @@ CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVersionNumber \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversionnumber.h \
  /home/madrid/veyon-src/core/src/Feature.h \

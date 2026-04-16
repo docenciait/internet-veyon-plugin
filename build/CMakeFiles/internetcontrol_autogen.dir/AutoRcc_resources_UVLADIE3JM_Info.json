@@ -1,20 +1,24 @@
 {
-	"BUILD_DIR" : "/home/madrid/mi-plugin-veyon/build/internetcontrol_autogen",
-	"CMAKE_BINARY_DIR" : "/home/madrid/mi-plugin-veyon/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/madrid/mi-plugin-veyon/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/madrid/mi-plugin-veyon",
-	"CMAKE_SOURCE_DIR" : "/home/madrid/mi-plugin-veyon",
+	"BUILD_DIR" : "/home/madrid/internet-veyon-plugin/build/internetcontrol_autogen",
+	"CMAKE_BINARY_DIR" : "/home/madrid/internet-veyon-plugin/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/madrid/internet-veyon-plugin/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/madrid/internet-veyon-plugin",
+	"CMAKE_SOURCE_DIR" : "/home/madrid/internet-veyon-plugin",
 	"GENERATOR" : "Unix Makefiles",
-	"INCLUDE_DIR" : "/home/madrid/mi-plugin-veyon/build/internetcontrol_autogen/include",
-	"INPUTS" : [ "/home/madrid/mi-plugin-veyon/src/icon.svg" ],
-	"LOCK_FILE" : "/home/madrid/mi-plugin-veyon/build/CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Lock.lock",
+	"INCLUDE_DIR" : "/home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/madrid/internet-veyon-plugin/src/icon_block.svg",
+		"/home/madrid/internet-veyon-plugin/src/icon_allow.svg"
+	],
+	"LOCK_FILE" : "/home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Lock.lock",
 	"MULTI_CONFIG" : false,
 	"OPTIONS" : [ "-name", "resources" ],
 	"OUTPUT_CHECKSUM" : "UVLADIE3JM",
 	"OUTPUT_NAME" : "qrc_resources.cpp",
 	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
 	"RCC_LIST_OPTIONS" : [ "--list" ],
-	"SETTINGS_FILE" : "/home/madrid/mi-plugin-veyon/build/CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Used.txt",
-	"SOURCE" : "/home/madrid/mi-plugin-veyon/src/resources.qrc",
+	"SETTINGS_FILE" : "/home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Used.txt",
+	"SOURCE" : "/home/madrid/internet-veyon-plugin/src/resources.qrc",
 	"VERBOSITY" : 0
 }
