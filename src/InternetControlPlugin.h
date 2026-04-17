@@ -12,7 +12,7 @@
 class InternetControlPlugin : public QObject, public FeatureProviderInterface, public PluginInterface
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "io.veyon.Veyon.Plugins.InternetControl")
+    Q_PLUGIN_METADATA(IID "io.veyon.Veyon.PluginInterface" FILE "InternetControl.json")
     Q_INTERFACES(PluginInterface FeatureProviderInterface)
 
 public:

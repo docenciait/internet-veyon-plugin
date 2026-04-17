@@ -68,7 +68,7 @@ include CMakeFiles/internetcontrol_autogen.dir/progress.make
 
 CMakeFiles/internetcontrol_autogen: internetcontrol_autogen/timestamp
 
-internetcontrol_autogen/timestamp: /usr/lib/qt5/bin/moc
+internetcontrol_autogen/timestamp: /usr/lib/qt6/libexec/moc
 internetcontrol_autogen/timestamp: CMakeFiles/internetcontrol_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target internetcontrol"
 	/usr/bin/cmake -E cmake_autogen /home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutogenInfo.json ""

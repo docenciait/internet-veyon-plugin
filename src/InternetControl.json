@@ -1,0 +1,10 @@
+{
+  "Name": "InternetControl",
+  "Description": "Control de acceso a Internet",
+  "Version": "1.0",
+  "Author": "Tu Nombre",
+  "Copyright": "2024",
+  "License": "GPLv2+",
+  "Category": "Feature",
+  "Interfaces": ["PluginInterface", "FeatureProviderInterface"]
+}

@@ -16,7 +16,7 @@
 	"OPTIONS" : [ "-name", "resources" ],
 	"OUTPUT_CHECKSUM" : "UVLADIE3JM",
 	"OUTPUT_NAME" : "qrc_resources.cpp",
-	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
 	"RCC_LIST_OPTIONS" : [ "--list" ],
 	"SETTINGS_FILE" : "/home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Used.txt",
 	"SOURCE" : "/home/madrid/internet-veyon-plugin/src/resources.qrc",

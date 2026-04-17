@@ -8,11 +8,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o"
   "CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o.d"
+  "internetcontrol.pdb"
+  "internetcontrol.so"
   "internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp"
   "internetcontrol_autogen/mocs_compilation.cpp"
   "internetcontrol_autogen/timestamp"
-  "libinternetcontrol.pdb"
-  "libinternetcontrol.so"
 )
 
 # Per-language clean rules from dependency scanning.
