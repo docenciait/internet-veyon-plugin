@@ -1,7 +1,7 @@
 CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
- /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.cpp \
+ /home/admin/internet-veyon-plugin/src/InternetControlPlugin.cpp \
  /usr/include/stdc-predef.h \
- /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.h \
+ /home/admin/internet-veyon-plugin/src/InternetControlPlugin.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
@@ -344,7 +344,7 @@ CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVersionNumber \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
- /home/madrid/veyon-src/core/src/Feature.h \
+ /home/admin/veyon-src/core/src/Feature.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeySequence \
@@ -353,31 +353,24 @@ CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
- /home/madrid/veyon-src/core/src/VeyonCore.h \
+ /home/admin/veyon-src/core/src/VeyonCore.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtEndian \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
- /home/madrid/veyon-src/core/src/QtCompat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QtGlobal \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QSet \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
- /home/madrid/veyon-src/core/src/FeatureProviderInterface.h \
- /home/madrid/veyon-src/core/src/ComputerControlInterface.h \
- /home/madrid/veyon-src/core/src/Computer.h \
+ /home/admin/veyon-src/core/src/FeatureProviderInterface.h \
+ /home/admin/veyon-src/core/src/ComputerControlInterface.h \
+ /home/admin/veyon-src/core/src/Computer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QHostAddress \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h \
- /home/madrid/veyon-src/core/src/NetworkObject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
+ /home/admin/veyon-src/core/src/NetworkObject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
@@ -389,19 +382,19 @@ CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
- /home/madrid/veyon-src/core/src/HashList.h \
+ /home/admin/veyon-src/core/src/HashList.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
- /home/madrid/veyon-src/core/src/Lockable.h \
+ /home/admin/veyon-src/core/src/Lockable.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRecursiveMutex \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmutex.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtsan_impl.h \
- /home/madrid/veyon-src/core/src/PlatformSessionFunctions.h \
- /home/madrid/veyon-src/core/src/VeyonConnection.h \
+ /home/admin/veyon-src/core/src/PlatformSessionFunctions.h \
+ /home/admin/veyon-src/core/src/VeyonConnection.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
- /home/madrid/veyon-src/core/src/RfbVeyonAuth.h \
- /home/madrid/veyon-src/core/src/VncConnection.h \
+ /home/admin/veyon-src/core/src/RfbVeyonAuth.h \
+ /home/admin/veyon-src/core/src/VncConnection.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
@@ -428,22 +421,24 @@ CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qwaitcondition.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDeadlineTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
- /home/madrid/veyon-src/core/src/SocketDevice.h \
+ /home/admin/veyon-src/core/src/SocketDevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
- /home/madrid/veyon-src/core/src/VncConnectionConfiguration.h \
- /home/madrid/veyon-src/core/src/EnumHelper.h \
+ /home/admin/veyon-src/core/src/VncConnectionConfiguration.h \
+ /home/admin/veyon-src/core/src/EnumHelper.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaEnum \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
- /home/madrid/veyon-src/core/src/FeatureMessage.h \
- /home/madrid/veyon-src/core/src/MessageContext.h \
- /home/madrid/veyon-src/core/src/PluginInterface.h \
- /home/madrid/veyon-src/core/src/Plugin.h \
+ /home/admin/veyon-src/core/src/FeatureMessage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+ /home/admin/veyon-src/core/src/MessageContext.h \
+ /home/admin/veyon-src/core/src/PluginInterface.h \
+ /home/admin/veyon-src/core/src/Plugin.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
- /home/madrid/veyon-src/core/src/VeyonMasterInterface.h \
- /home/madrid/veyon-src/core/src/Configuration/Object.h \
- /home/madrid/veyon-src/core/src/Configuration/Store.h \
+ /home/admin/veyon-src/core/src/VeyonMasterInterface.h \
+ /home/admin/veyon-src/core/src/Configuration/Object.h \
+ /home/admin/veyon-src/core/src/Configuration/Store.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \

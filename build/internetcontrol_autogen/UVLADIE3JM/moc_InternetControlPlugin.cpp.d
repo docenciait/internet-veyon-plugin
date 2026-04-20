@@ -1,29 +1,28 @@
-/home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/moc_InternetControlPlugin.cpp: /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.h \
-  /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/moc_predefs.h \
-  /home/madrid/internet-veyon-plugin/src/InternetControl.json \
-  /home/madrid/veyon-src/core/src/Computer.h \
-  /home/madrid/veyon-src/core/src/ComputerControlInterface.h \
-  /home/madrid/veyon-src/core/src/Configuration/Object.h \
-  /home/madrid/veyon-src/core/src/Configuration/Store.h \
-  /home/madrid/veyon-src/core/src/EnumHelper.h \
-  /home/madrid/veyon-src/core/src/Feature.h \
-  /home/madrid/veyon-src/core/src/FeatureMessage.h \
-  /home/madrid/veyon-src/core/src/FeatureProviderInterface.h \
-  /home/madrid/veyon-src/core/src/HashList.h \
-  /home/madrid/veyon-src/core/src/Lockable.h \
-  /home/madrid/veyon-src/core/src/MessageContext.h \
-  /home/madrid/veyon-src/core/src/NetworkObject.h \
-  /home/madrid/veyon-src/core/src/PlatformSessionFunctions.h \
-  /home/madrid/veyon-src/core/src/Plugin.h \
-  /home/madrid/veyon-src/core/src/PluginInterface.h \
-  /home/madrid/veyon-src/core/src/QtCompat.h \
-  /home/madrid/veyon-src/core/src/RfbVeyonAuth.h \
-  /home/madrid/veyon-src/core/src/SocketDevice.h \
-  /home/madrid/veyon-src/core/src/VeyonConnection.h \
-  /home/madrid/veyon-src/core/src/VeyonCore.h \
-  /home/madrid/veyon-src/core/src/VeyonMasterInterface.h \
-  /home/madrid/veyon-src/core/src/VncConnection.h \
-  /home/madrid/veyon-src/core/src/VncConnectionConfiguration.h \
+/home/admin/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/moc_InternetControlPlugin.cpp: /home/admin/internet-veyon-plugin/src/InternetControlPlugin.h \
+  /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/moc_predefs.h \
+  /home/admin/internet-veyon-plugin/src/InternetControl.json \
+  /home/admin/veyon-src/core/src/Computer.h \
+  /home/admin/veyon-src/core/src/ComputerControlInterface.h \
+  /home/admin/veyon-src/core/src/Configuration/Object.h \
+  /home/admin/veyon-src/core/src/Configuration/Store.h \
+  /home/admin/veyon-src/core/src/EnumHelper.h \
+  /home/admin/veyon-src/core/src/Feature.h \
+  /home/admin/veyon-src/core/src/FeatureMessage.h \
+  /home/admin/veyon-src/core/src/FeatureProviderInterface.h \
+  /home/admin/veyon-src/core/src/HashList.h \
+  /home/admin/veyon-src/core/src/Lockable.h \
+  /home/admin/veyon-src/core/src/MessageContext.h \
+  /home/admin/veyon-src/core/src/NetworkObject.h \
+  /home/admin/veyon-src/core/src/PlatformSessionFunctions.h \
+  /home/admin/veyon-src/core/src/Plugin.h \
+  /home/admin/veyon-src/core/src/PluginInterface.h \
+  /home/admin/veyon-src/core/src/RfbVeyonAuth.h \
+  /home/admin/veyon-src/core/src/SocketDevice.h \
+  /home/admin/veyon-src/core/src/VeyonConnection.h \
+  /home/admin/veyon-src/core/src/VeyonCore.h \
+  /home/admin/veyon-src/core/src/VeyonMasterInterface.h \
+  /home/admin/veyon-src/core/src/VncConnection.h \
+  /home/admin/veyon-src/core/src/VncConnectionConfiguration.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -324,7 +323,6 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QQueue \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QReadWriteLock \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRecursiveMutex \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSet \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QThread \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
@@ -334,7 +332,6 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVersionNumber \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QWaitCondition \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QtEndian \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtGlobal \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \

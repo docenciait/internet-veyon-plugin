@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/madrid/internet-veyon-plugin
+CMAKE_SOURCE_DIR = /home/admin/internet-veyon-plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/madrid/internet-veyon-plugin/build
+CMAKE_BINARY_DIR = /home/admin/internet-veyon-plugin/build
 
 # Utility rule file for internetcontrol_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/internetcontrol_autogen: internetcontrol_autogen/timestamp
 
 internetcontrol_autogen/timestamp: /usr/lib/qt6/libexec/moc
 internetcontrol_autogen/timestamp: CMakeFiles/internetcontrol_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target internetcontrol"
-	/usr/bin/cmake -E cmake_autogen /home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/admin/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target internetcontrol"
+	/usr/bin/cmake -E cmake_autogen /home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/timestamp
 
 internetcontrol_autogen: CMakeFiles/internetcontrol_autogen
 internetcontrol_autogen: internetcontrol_autogen/timestamp
@@ -88,6 +88,6 @@ CMakeFiles/internetcontrol_autogen.dir/clean:
 .PHONY : CMakeFiles/internetcontrol_autogen.dir/clean
 
 CMakeFiles/internetcontrol_autogen.dir/depend:
-	cd /home/madrid/internet-veyon-plugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrid/internet-veyon-plugin /home/madrid/internet-veyon-plugin /home/madrid/internet-veyon-plugin/build /home/madrid/internet-veyon-plugin/build /home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin/internet-veyon-plugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/internet-veyon-plugin /home/admin/internet-veyon-plugin /home/admin/internet-veyon-plugin/build /home/admin/internet-veyon-plugin/build /home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/internetcontrol_autogen.dir/depend
 

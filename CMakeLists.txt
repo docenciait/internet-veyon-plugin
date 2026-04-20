@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTORCC ON)
 
 # Rutas a los encabezados de Veyon
-include_directories("/home/madrid/veyon-src/core/include")
-include_directories("/home/madrid/veyon-src/core/src")
+include_directories("/home/admin/veyon-src/core/include")
+include_directories("/home/admin/veyon-src/core/src")
 
 # ====================================================================
 # FORZAMOS Qt 6 (Nada de Qt 5 aquí)

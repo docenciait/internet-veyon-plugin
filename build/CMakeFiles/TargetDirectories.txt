@@ -1,5 +1,5 @@
-/home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol.dir
-/home/madrid/internet-veyon-plugin/build/CMakeFiles/edit_cache.dir
-/home/madrid/internet-veyon-plugin/build/CMakeFiles/rebuild_cache.dir
-/home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen_timestamp_deps.dir
-/home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir
+/home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol.dir
+/home/admin/internet-veyon-plugin/build/CMakeFiles/edit_cache.dir
+/home/admin/internet-veyon-plugin/build/CMakeFiles/rebuild_cache.dir
+/home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen_timestamp_deps.dir
+/home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir

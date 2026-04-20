@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/madrid/internet-veyon-plugin
+CMAKE_SOURCE_DIR = /home/admin/internet-veyon-plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/madrid/internet-veyon-plugin/build
+CMAKE_BINARY_DIR = /home/admin/internet-veyon-plugin/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/internetcontrol.dir/depend.make
@@ -71,59 +71,59 @@ include CMakeFiles/internetcontrol.dir/flags.make
 
 internetcontrol_autogen/timestamp: /usr/lib/qt6/libexec/moc
 internetcontrol_autogen/timestamp: CMakeFiles/internetcontrol.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target internetcontrol"
-	/usr/bin/cmake -E cmake_autogen /home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/admin/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target internetcontrol"
+	/usr/bin/cmake -E cmake_autogen /home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/timestamp
 
-internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: /home/madrid/internet-veyon-plugin/src/resources.qrc
+internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: /home/admin/internet-veyon-plugin/src/resources.qrc
 internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json
-internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: /home/madrid/internet-veyon-plugin/src/icon_block.svg
-internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: /home/madrid/internet-veyon-plugin/src/icon_allow.svg
+internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: /home/admin/internet-veyon-plugin/src/icon_block.svg
+internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: /home/admin/internet-veyon-plugin/src/icon_allow.svg
 internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for src/resources.qrc"
-	/usr/bin/cmake -E cmake_autorcc /home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json 
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/admin/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for src/resources.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json 
 
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: CMakeFiles/internetcontrol.dir/flags.make
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: internetcontrol_autogen/mocs_compilation.cpp
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: CMakeFiles/internetcontrol.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o -MF CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o -c /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o -MF CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o -c /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/mocs_compilation.cpp
 
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/mocs_compilation.cpp > CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/mocs_compilation.cpp > CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/mocs_compilation.cpp -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/mocs_compilation.cpp -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: CMakeFiles/internetcontrol.dir/flags.make
-CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.cpp
+CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: /home/admin/internet-veyon-plugin/src/InternetControlPlugin.cpp
 CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: CMakeFiles/internetcontrol.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o -MF CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o.d -o CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o -c /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o -MF CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o.d -o CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o -c /home/admin/internet-veyon-plugin/src/InternetControlPlugin.cpp
 
 CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.cpp > CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/internet-veyon-plugin/src/InternetControlPlugin.cpp > CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.i
 
 CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrid/internet-veyon-plugin/src/InternetControlPlugin.cpp -o CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/internet-veyon-plugin/src/InternetControlPlugin.cpp -o CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.s
 
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o: CMakeFiles/internetcontrol.dir/flags.make
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o: internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o: CMakeFiles/internetcontrol.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o -MF CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o.d -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o -c /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o -MF CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o.d -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.o -c /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp
 
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp > CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp > CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.i
 
 CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrid/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/internet-veyon-plugin/build/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp -o CMakeFiles/internetcontrol.dir/internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp.s
 
 # Object files for target internetcontrol
 internetcontrol_OBJECTS = \
@@ -146,7 +146,7 @@ internetcontrol.so: /usr/lib/x86_64-linux-gnu/libGLX.so
 internetcontrol.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 internetcontrol.so: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 internetcontrol.so: CMakeFiles/internetcontrol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/madrid/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared module internetcontrol.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/admin/internet-veyon-plugin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared module internetcontrol.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/internetcontrol.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -159,6 +159,6 @@ CMakeFiles/internetcontrol.dir/clean:
 
 CMakeFiles/internetcontrol.dir/depend: internetcontrol_autogen/UVLADIE3JM/qrc_resources.cpp
 CMakeFiles/internetcontrol.dir/depend: internetcontrol_autogen/timestamp
-	cd /home/madrid/internet-veyon-plugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrid/internet-veyon-plugin /home/madrid/internet-veyon-plugin /home/madrid/internet-veyon-plugin/build /home/madrid/internet-veyon-plugin/build /home/madrid/internet-veyon-plugin/build/CMakeFiles/internetcontrol.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin/internet-veyon-plugin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/internet-veyon-plugin /home/admin/internet-veyon-plugin /home/admin/internet-veyon-plugin/build /home/admin/internet-veyon-plugin/build /home/admin/internet-veyon-plugin/build/CMakeFiles/internetcontrol.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/internetcontrol.dir/depend
 

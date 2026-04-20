@@ -2,7 +2,7 @@
 
 #include <QObject>
 #include <QMessageBox>
-#include <QProcess>       // <--- AÑADIDO: Necesario para ejecutar comandos del sistema
+#include <QProcess>
 #include <QVersionNumber>
 #include "Feature.h"
 #include "FeatureProviderInterface.h"
@@ -12,12 +12,14 @@
 class InternetControlPlugin : public QObject, public FeatureProviderInterface, public PluginInterface
 {
     Q_OBJECT
+    // ESTA LÍNEA ES VITAL QUE ESTÉ AQUÍ:
     Q_PLUGIN_METADATA(IID "io.veyon.Veyon.PluginInterface" FILE "InternetControl.json")
     Q_INTERFACES(PluginInterface FeatureProviderInterface)
 
 public:
     explicit InternetControlPlugin(QObject* parent = nullptr);
     ~InternetControlPlugin() override = default;
+    
 
     Plugin::Uid uid() const override { return Plugin::Uid{ QStringLiteral("11111111-2222-3333-4444-555555555555") }; }
     QVersionNumber version() const override { return QVersionNumber(1, 0); }
@@ -40,7 +42,6 @@ public:
     bool handleFeatureMessage(VeyonWorkerInterface& worker, const FeatureMessage& message) override;
 
 private:
-    // AHORA TENEMOS DOS BOTONES
     Feature m_blockFeature;
     Feature m_allowFeature;
     FeatureList m_features;
