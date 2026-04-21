@@ -442,4 +442,5 @@ CMakeFiles/internetcontrol.dir/src/InternetControlPlugin.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+ /home/admin/veyon-src/core/src/VeyonServerInterface.h

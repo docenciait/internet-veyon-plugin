@@ -1,5 +1,8 @@
 #include "InternetControlPlugin.h"
 #include <QProcess>
+#include <QDebug>
+#include "VeyonServerInterface.h"
+#include "VeyonCore.h"
 
 InternetControlPlugin::InternetControlPlugin(QObject *parent) : QObject(parent),
                                                                 m_blockFeature(
@@ -20,9 +23,13 @@ InternetControlPlugin::InternetControlPlugin(QObject *parent) : QObject(parent),
 {
 }
 
-const FeatureList &InternetControlPlugin::featureList() const { return m_features; }
+const FeatureList &InternetControlPlugin::featureList() const
+{
+    return m_features;
+}
 
-bool InternetControlPlugin::startFeature(VeyonMasterInterface &master, const Feature &feature, const ComputerControlInterfaceList &computerControlInterfaces)
+bool InternetControlPlugin::startFeature(VeyonMasterInterface &master, const Feature &feature,
+                                         const ComputerControlInterfaceList &computerControlInterfaces)
 {
     FeatureMessage message(feature.uid());
     for (auto computer : computerControlInterfaces)
@@ -36,43 +43,34 @@ bool InternetControlPlugin::handleFeatureMessage(VeyonServerInterface &server, c
 {
     if (message.featureUid() == m_blockFeature.uid())
     {
-        // --- REGLAS DE BLOQUEO TOTAL ---
-
-        // 1. Limpiar todo
+        // 1. Limpiar reglas y establecer DROP
         QProcess::execute("iptables", {"-F"});
         QProcess::execute("iptables", {"-X"});
-
-        // 2. Políticas por defecto: DROP
         QProcess::execute("iptables", {"-P", "INPUT", "DROP"});
         QProcess::execute("iptables", {"-P", "FORWARD", "DROP"});
         QProcess::execute("iptables", {"-P", "OUTPUT", "DROP"});
 
-        // 3. Loopback (Crítico para que el PC no se cuelgue internamente)
+        // 2. Permitir Loopback y Red Local (192.168.0.0/16)
         QProcess::execute("iptables", {"-A", "INPUT", "-i", "lo", "-j", "ACCEPT"});
         QProcess::execute("iptables", {"-A", "OUTPUT", "-o", "lo", "-j", "ACCEPT"});
-
-        // 4. Permitir Red Local (Para que Veyon siga conectado)
-        // Salida a la red local
         QProcess::execute("iptables", {"-A", "OUTPUT", "-d", "192.168.0.0/16", "-j", "ACCEPT"});
-        // Entrada desde la red local
         QProcess::execute("iptables", {"-A", "INPUT", "-s", "192.168.0.0/16", "-m", "state", "--state", "NEW,ESTABLISHED", "-j", "ACCEPT"});
 
         return true;
     }
     else if (message.featureUid() == m_allowFeature.uid())
     {
-        // --- REGLAS PARA PERMITIR INTERNET ---
-
         // 1. Restaurar políticas a ACCEPT
         QProcess::execute("iptables", {"-P", "INPUT", "ACCEPT"});
         QProcess::execute("iptables", {"-P", "FORWARD", "ACCEPT"});
         QProcess::execute("iptables", {"-P", "OUTPUT", "ACCEPT"});
 
-        // 2. Limpiar las reglas de bloqueo
+        // 2. Limpiar todo
         QProcess::execute("iptables", {"-F"});
 
         return true;
     }
+
     return false;
 }
 
