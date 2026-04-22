@@ -2,14 +2,13 @@
 #include <QProcess>
 #include <QDebug>
 
-// Encabezados estándar del SDK de Veyon
+// Headers estándar del SDK de Veyon
 #include "VeyonServerInterface.h"
 #include "VeyonMasterInterface.h"
 #include "ComputerControlInterface.h"
 #include "VeyonCore.h"
-
-// En Veyon 4.x, Computer suele estar en el namespace Veyon o requerir su header específico
 #include "Computer.h"
+#include "Feature.h"
 
 InternetControlPlugin::InternetControlPlugin(QObject *parent) : QObject(parent),
                                                                 m_blockFeature(
@@ -43,17 +42,11 @@ bool InternetControlPlugin::startFeature(VeyonMasterInterface &master, const Fea
         return false;
     }
 
-    const bool esBloqueo = (feature.uid() == m_blockFeature.uid());
     const FeatureMessage message(feature.uid());
 
     for (auto computerControl : computerControlInterfaces)
     {
-        // --- GESTIÓN DE ICONOS (MÉTODO COMPATIBLE 4.10) ---
-        // Si setFeatureStatus falla en el objeto master, lo omitimos para asegurar la compilación
-        // de la lógica principal. En 4.10, muchas veces el Master gestiona el icono
-        // basándose en el mensaje de respuesta del servidor (el alumno).
-
-        // Enviar la orden real al equipo del alumno
+        // Enviamos la orden al equipo del alumno
         computerControl->sendFeatureMessage(message);
     }
 
@@ -64,41 +57,43 @@ bool InternetControlPlugin::handleFeatureMessage(VeyonServerInterface &server, c
 {
     if (message.featureUid() == m_blockFeature.uid())
     {
-        // 1. Limpieza total de reglas anteriores
+        // 1. APLICAR REGLAS DE IPTABLES (BLOQUEO)
         QProcess::execute("iptables", {"-F"});
         QProcess::execute("iptables", {"-X"});
-
-        // 2. Establecer política por defecto: BLOQUEAR TODO (DROP)
         QProcess::execute("iptables", {"-P", "INPUT", "DROP"});
         QProcess::execute("iptables", {"-P", "FORWARD", "DROP"});
         QProcess::execute("iptables", {"-P", "OUTPUT", "DROP"});
 
-        // 3. Permitir Loopback (Crítico para el sistema)
+        // Permitir localhost
         QProcess::execute("iptables", {"-A", "INPUT", "-i", "lo", "-j", "ACCEPT"});
         QProcess::execute("iptables", {"-A", "OUTPUT", "-o", "lo", "-j", "ACCEPT"});
 
-        // 4. Permitir tráfico a IPs específicas de Profesores
-        const QStringList profes = {"192.168.50.2", "192.168.50.50", "192.168.50.100"};
-
+        // Permitir acceso a IPs de Profesores (AQUÍ TUS IPs)
+        const QStringList profes = {"192.168.50.2", "192.168.50.50", "192.168.50.100", "192.168.50.11"};
         for (const QString &ip : profes)
         {
-            // Salida hacia el profesor
             QProcess::execute("iptables", {"-A", "OUTPUT", "-d", ip, "-j", "ACCEPT"});
-            // Entrada desde el profesor (permitiendo conexiones establecidas)
             QProcess::execute("iptables", {"-A", "INPUT", "-s", ip, "-m", "state", "--state", "NEW,ESTABLISHED", "-j", "ACCEPT"});
         }
+
+        // 2. INDICADOR VISUAL PARA EL VEYON MASTER
+        // Lanzamos una notificación crítica. Como profesor, verás este cuadro en la miniatura del alumno.
+        QProcess::startDetached("notify-send", {"-u", "critical", "-t", "0", "Veyon: INTERNET BLOQUEADO", "Acceso restringido por el profesor."});
 
         return true;
     }
     else if (message.featureUid() == m_allowFeature.uid())
     {
-        // 1. Restaurar políticas a ACCEPT (Permitir todo)
+        // 1. RESTAURAR NAVEGACIÓN
         QProcess::execute("iptables", {"-P", "INPUT", "ACCEPT"});
         QProcess::execute("iptables", {"-P", "FORWARD", "ACCEPT"});
         QProcess::execute("iptables", {"-P", "OUTPUT", "ACCEPT"});
-
-        // 2. Limpiar reglas para dejar el sistema limpio
         QProcess::execute("iptables", {"-F"});
+
+        // 2. QUITAR AVISO VISUAL
+        // Cerramos las notificaciones para limpiar la pantalla del alumno y tu Master
+        QProcess::execute("killall", {"notify-osd"}); // Para Ubuntu estándar
+        QProcess::execute("killall", {"dunst"});      // Para otros entornos ligeros
 
         return true;
     }
@@ -106,5 +101,6 @@ bool InternetControlPlugin::handleFeatureMessage(VeyonServerInterface &server, c
     return false;
 }
 
+// Implementaciones obligatorias de la interfaz (vacías)
 bool InternetControlPlugin::handleFeatureMessage(VeyonWorkerInterface &, const FeatureMessage &) { return false; }
 bool InternetControlPlugin::controlFeature(Feature::Uid, Operation, const QVariantMap &, const ComputerControlInterfaceList &) { return false; }
