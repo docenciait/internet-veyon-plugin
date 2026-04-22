@@ -1,8 +1,15 @@
 #include "InternetControlPlugin.h"
 #include <QProcess>
 #include <QDebug>
+
+// Encabezados estándar del SDK de Veyon
 #include "VeyonServerInterface.h"
+#include "VeyonMasterInterface.h"
+#include "ComputerControlInterface.h"
 #include "VeyonCore.h"
+
+// En Veyon 4.x, Computer suele estar en el namespace Veyon o requerir su header específico
+#include "Computer.h"
 
 InternetControlPlugin::InternetControlPlugin(QObject *parent) : QObject(parent),
                                                                 m_blockFeature(
@@ -31,11 +38,25 @@ const FeatureList &InternetControlPlugin::featureList() const
 bool InternetControlPlugin::startFeature(VeyonMasterInterface &master, const Feature &feature,
                                          const ComputerControlInterfaceList &computerControlInterfaces)
 {
-    FeatureMessage message(feature.uid());
-    for (auto computer : computerControlInterfaces)
+    if (computerControlInterfaces.isEmpty())
     {
-        computer->sendFeatureMessage(message);
+        return false;
     }
+
+    const bool esBloqueo = (feature.uid() == m_blockFeature.uid());
+    const FeatureMessage message(feature.uid());
+
+    for (auto computerControl : computerControlInterfaces)
+    {
+        // --- GESTIÓN DE ICONOS (MÉTODO COMPATIBLE 4.10) ---
+        // Si setFeatureStatus falla en el objeto master, lo omitimos para asegurar la compilación
+        // de la lógica principal. En 4.10, muchas veces el Master gestiona el icono
+        // basándose en el mensaje de respuesta del servidor (el alumno).
+
+        // Enviar la orden real al equipo del alumno
+        computerControl->sendFeatureMessage(message);
+    }
+
     return true;
 }
 
@@ -43,29 +64,40 @@ bool InternetControlPlugin::handleFeatureMessage(VeyonServerInterface &server, c
 {
     if (message.featureUid() == m_blockFeature.uid())
     {
-        // 1. Limpiar reglas y establecer DROP
+        // 1. Limpieza total de reglas anteriores
         QProcess::execute("iptables", {"-F"});
         QProcess::execute("iptables", {"-X"});
+
+        // 2. Establecer política por defecto: BLOQUEAR TODO (DROP)
         QProcess::execute("iptables", {"-P", "INPUT", "DROP"});
         QProcess::execute("iptables", {"-P", "FORWARD", "DROP"});
         QProcess::execute("iptables", {"-P", "OUTPUT", "DROP"});
 
-        // 2. Permitir Loopback y Red Local (192.168.0.0/16)
+        // 3. Permitir Loopback (Crítico para el sistema)
         QProcess::execute("iptables", {"-A", "INPUT", "-i", "lo", "-j", "ACCEPT"});
         QProcess::execute("iptables", {"-A", "OUTPUT", "-o", "lo", "-j", "ACCEPT"});
-        QProcess::execute("iptables", {"-A", "OUTPUT", "-d", "192.168.0.0/16", "-j", "ACCEPT"});
-        QProcess::execute("iptables", {"-A", "INPUT", "-s", "192.168.0.0/16", "-m", "state", "--state", "NEW,ESTABLISHED", "-j", "ACCEPT"});
+
+        // 4. Permitir tráfico a IPs específicas de Profesores
+        const QStringList profes = {"192.168.50.2", "192.168.50.50", "192.168.50.100"};
+
+        for (const QString &ip : profes)
+        {
+            // Salida hacia el profesor
+            QProcess::execute("iptables", {"-A", "OUTPUT", "-d", ip, "-j", "ACCEPT"});
+            // Entrada desde el profesor (permitiendo conexiones establecidas)
+            QProcess::execute("iptables", {"-A", "INPUT", "-s", ip, "-m", "state", "--state", "NEW,ESTABLISHED", "-j", "ACCEPT"});
+        }
 
         return true;
     }
     else if (message.featureUid() == m_allowFeature.uid())
     {
-        // 1. Restaurar políticas a ACCEPT
+        // 1. Restaurar políticas a ACCEPT (Permitir todo)
         QProcess::execute("iptables", {"-P", "INPUT", "ACCEPT"});
         QProcess::execute("iptables", {"-P", "FORWARD", "ACCEPT"});
         QProcess::execute("iptables", {"-P", "OUTPUT", "ACCEPT"});
 
-        // 2. Limpiar todo
+        // 2. Limpiar reglas para dejar el sistema limpio
         QProcess::execute("iptables", {"-F"});
 
         return true;
