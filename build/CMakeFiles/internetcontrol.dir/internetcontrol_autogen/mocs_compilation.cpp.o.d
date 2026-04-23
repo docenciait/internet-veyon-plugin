@@ -285,18 +285,22 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/ctime \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVersionNumber \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
@@ -318,7 +322,6 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
@@ -344,18 +347,22 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QVersionNumber \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
  /home/admin/veyon-src/core/src/Feature.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeySequence \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
  /home/admin/veyon-src/core/src/VeyonCore.h \
@@ -396,8 +403,6 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtsan_impl.h \
  /home/admin/veyon-src/core/src/PlatformSessionFunctions.h \
  /home/admin/veyon-src/core/src/VeyonConnection.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointer \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
  /home/admin/veyon-src/core/src/RfbVeyonAuth.h \
  /home/admin/veyon-src/core/src/VncConnection.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
@@ -435,7 +440,6 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
  /home/admin/veyon-src/core/src/FeatureMessage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /home/admin/veyon-src/core/src/MessageContext.h \
  /home/admin/veyon-src/core/src/PluginInterface.h \
  /home/admin/veyon-src/core/src/Plugin.h \
@@ -444,10 +448,6 @@ CMakeFiles/internetcontrol.dir/internetcontrol_autogen/mocs_compilation.cpp.o: \
  /home/admin/veyon-src/core/src/VeyonMasterInterface.h \
  /home/admin/veyon-src/core/src/Configuration/Object.h \
  /home/admin/veyon-src/core/src/Configuration/Store.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qplugin.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \

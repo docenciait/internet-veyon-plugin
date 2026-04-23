@@ -335,6 +335,7 @@ internetcontrol_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QVersionNumber \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QWaitCondition \
@@ -445,6 +446,7 @@ internetcontrol_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantmap.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
@@ -483,9 +485,7 @@ internetcontrol_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h \
-	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
-	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
-	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
